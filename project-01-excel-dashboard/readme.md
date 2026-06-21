@@ -14,16 +14,15 @@
 ## Files Included
 ## Recruiter Summary
 
+
 ## Data Cleaning Process
 
-The dataset was reviewed for missing values, duplicate records, data type issues, and formatting problems. No missing values or exact duplicate rows were found. Date fields were standardized, numeric fields were formatted, and additional calculated columns were created to support dashboard analysis.
+The raw Superstore dataset was cleaned using Excel Power Query. The cleaning process included:
 
-Calculated columns created:
-- Order Year
-- Order Month Number
-- Order Month Name
-- Year-Month
-- Shipping Days
-- Profit Margin
-- Profit Status
-- Sales Bucket
+- Promoting headers
+- Correcting data types
+- Keeping Postal Code as text because the dataset includes Canadian alphanumeric postal codes
+- Trimming and cleaning text fields
+- Removing duplicate business rows
+- Keeping negative profit values because they represent valid loss-making transactions
+- Creating dashboard-ready fields such as Order Year, Order Year-Month, Shipping Days, Profit Margin, Profit Status, Discount Band, and Sales Bucket
