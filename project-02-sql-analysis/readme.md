@@ -119,3 +119,7 @@ During data validation, Debit and Credit values were found to be identical acros
 
 ## Recruiter-Friendly Summary
 Developed a PostgreSQL financial transaction analysis project using 100,000 accounting records. Created a cleaned SQL view, performed data quality validation, classified transactions into inflows, outflows, and transfers, and wrote beginner-to-advanced SQL queries using aggregations, CTEs, window functions, rankings, and business logic to generate financial insights and recommendations.
+
+
+### Note:
+During data validation, Debit and Credit values were found to be identical across all records. To keep the analysis business-relevant, Debit was treated as the transaction amount, while Transaction_Type was used to classify inflows, outflows, and transfers. 

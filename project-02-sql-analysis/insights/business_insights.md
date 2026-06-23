@@ -61,3 +61,7 @@ This SQL project analyzes 100,000 financial transaction records from 2023. The a
 
 ## Recruiter-Friendly Summary
 Used PostgreSQL and DBeaver to analyze 100,000 financial transaction records. Created a cleaned SQL view, validated data quality, classified transactions into inflow/outflow/transfer categories, and wrote beginner-to-advanced SQL queries using aggregations, CASE WHEN logic, CTEs, window functions, rankings, monthly trends, and business reporting techniques.
+
+
+### Note:
+During data validation, Debit and Credit values were found to be identical across all records. To keep the analysis business-relevant, Debit was treated as the transaction amount, while Transaction_Type was used to classify inflows, outflows, and transfers.
